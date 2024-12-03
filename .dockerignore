@@ -1,0 +1,3 @@
+# We don't want to copy the local env directory into the container
+# as we have an step to build it from the requirements.txt file
+env

@@ -1,0 +1,9 @@
+services:
+  fastapi:
+    image: image-fastapi
+    build: .
+    container_name: fastapi-application
+    ports:
+      - "8082:8080" # 8082 is the port on the host machine, change it to any port you want
+    volumes:
+      - .:/code
